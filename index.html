@@ -20,7 +20,7 @@
     <div class="bg-lobby">
         <!-- 大廳 -->
         <header class="header">
-            <div class="header_container">
+            <div class="header_container bg-header">
                 <div class="container">
                     <div class="header_content d-flex  align-items-center">
                         <!-- logo -->
@@ -50,24 +50,31 @@
             </div>
         </header>
         <!-- game -->
-        <div class="container-fluid">
-            <div class="owl-carousel" style="padding-top: 50px;">
+        <div class="container-fluid h-100 align-items-center d-flex pt-5">
+            <div class="owl-carousel">
                 <div class="item">
                     <div class="d-flex flex-column">
-                        <img src="assets/images/game/1.png" alt="" class="kw-img-fluid">
-                        <img src="assets/images/game/2.png" alt="" class="kw-img-fluid">
+                        <a href="game.html">
+                            <img src="assets/images/game/1.png" alt="" class="kw-img-fluid">
+                        </a>
+                        <a href="game.html">
+                            <img src="assets/images/game/2.png" alt="" class="kw-img-fluid">
+                        </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="d-flex flex-column">
-                        <img src="assets/images/game/3.png" alt="" class="kw-img-fluid">
-                        <img src="assets/images/game/4.png" alt="" class="kw-img-fluid">
+                        <a href="game.html">
+                            <img src="assets/images/game/3.png" alt="" class="kw-img-fluid">
+                        </a>
+                        <a href="game.html">
+                            <img src="assets/images/game/4.png" alt="" class="kw-img-fluid">
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- <div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+            <!-- <div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
             <div class="menu_close_container">
                 <div class="menu_close">
                     <div></div>
@@ -95,27 +102,27 @@
             </nav>
         </div> -->
 
-    </div>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            loop: true,
-            margin: 30,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                568: {
-                    items: 4
-                },
-                1000: {
-                    items: 4
+        </div>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script>
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                loop: true,
+                margin: 30,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    568: {
+                        items: 4
+                    },
+                    1000: {
+                        items: 4
+                    }
                 }
-            }
-        })
-    </script>
+            })
+        </script>
 </body>
 
 </html>
