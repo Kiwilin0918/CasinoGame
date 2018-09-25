@@ -1,15 +1,274 @@
-.embed-container { 
-    position: relative;
-    /* padding-bottom: 56.25%; */
-    height: 100vh; 
-    overflow: hidden; 
-    max-width: 100%; 
-} 
-.embed-container iframe, .embed-container object, .embed-container embed {
-     position: absolute; 
-     top: 0; 
-     left: 0; 
-     width: 100%; 
-     height: 100%; 
-     max-height: 100vh;
+html,
+body {
+	max-height: 100vh;
+}
+
+/****************************
+iframe用
+****************************/
+.embed-container {
+	position: relative;
+	/* padding-bottom: 56.25%; */
+	height: 100vh;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	max-height: 100vh;
+}
+
+/* 背景 */
+.bg-lobby {
+	background-image: url('../images/bg.jpg');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+/*********************************
+2. Header
+*********************************/
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+.header.scrolled {
+	top: 0;
+}
+
+/*********************************
+2.2 Header Content
+*********************************/
+
+.header_container {
+	width: 100%;
+	background: #FFFFFF;
+}
+
+.header_content {
+	height: 44px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+.header.scrolled .header_content {
+	height: 80px;
+}
+
+/*********************************
+3. Main Nav
+*********************************/
+
+.main_nav,
+.user {
+	display: inline-block;
+}
+
+.main_nav li {
+	display: inline-block;
+	position: relative;
+}
+
+.main_nav li:not(:last-child) {
+	margin-right: 20px;
+}
+
+.main_nav li a {
+	color: rgba(0, 0, 0, 0.45);
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+.main_nav li a:hover,
+.main_nav li.active a {
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.header_content_right {
+	width: 100px;
+}
+
+/*********************************
+4. Hamburger
+*********************************/
+.hamburger {
+	display: none;
+	cursor: pointer;
+}
+
+.hamburger i {
+	font-size: 20px;
+	color: #000000;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+/*********************************
+5. Menu
+*********************************/
+
+.menu {
+	position: fixed;
+	top: 0;
+	right: -400px;
+	width: 400px;
+	height: 100vh;
+	background: #FFFFFF;
+	z-index: 101;
+	padding-right: 60px;
+	padding-top: 87px;
+	padding-left: 50px;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu.active {
+	right: 0;
+}
+
+.menu_close_container {
+	position: absolute;
+	top: 30px;
+	right: 60px;
+	width: 18px;
+	height: 18px;
+	transform-origin: center center;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+.menu_close {
+	width: 150%;
+	height: 150%;
+	transform-style: preserve-3D;
+}
+
+.menu_close div {
+	width: 100%;
+	height: 2px;
+	background: #244693;
+	top: 8px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+.menu_close div:last-of-type {
+	-webkit-transform: rotate(90deg) translateX(-2px);
+	-moz-transform: rotate(90deg) translateX(-2px);
+	-ms-transform: rotate(90deg) translateX(-2px);
+	-o-transform: rotate(90deg) translateX(-2px);
+	transform: rotate(90deg) translateX(-2px);
+	transform-origin: center;
+}
+
+.menu_close:hover div {
+	background: #3e7ac9;
+}
+
+.menu .logo {
+	margin-bottom: 60px;
+}
+
+.menu_nav ul li {
+	margin-bottom: 9px;
+}
+
+.menu_nav ul li a {
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.6);
+	letter-spacing: 0.1em;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+.menu_nav ul li a:hover {
+	color: #7872b2;
+}
+
+@media only screen and (max-width: 991px) {
+	.hamburger {
+		display: inline-block;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.header.scrolled {
+		top: 0px;
+	}
+
+	.header.scrolled .header_content {
+		height: 60px;
+	}
+}
+
+.menu-svg {
+	background-image: url("../images/menu.svg");
+	background-color: rgb(201, 32, 32);
+	display: inline-block;
+	background-size: cover;
+	width: 38px;
+	height: 38px;
+}
+
+.trans_400 {
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+}
+
+/* 
+image
+*/
+.kw-img-fluid {
+	max-height: 100%;
+	width: auto;
+	height: 38vh;
+	width: 38vh;
+}
+
+@media (min-width: 1024px) {
+	.kw-img-fluid {
+		height: 30vh;
+		width: 30vh;
+	}
 }

@@ -7,68 +7,115 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- owl css -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <!-- my style -->
     <link rel="stylesheet" href="assets/css/style.css">
+
     <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+    <div class="bg-lobby">
+        <!-- 大廳 -->
+        <header class="header">
+            <div class="header_container">
+                <div class="container">
+                    <div class="header_content d-flex  align-items-center">
+                        <!-- logo -->
+                        <div class="" style="width: 50px;">
+                            <a href="#page-top" class="bg-logo js-scroll-trigger"></a>
+                        </div>
+                        <nav class="main_nav_contaner navbar navbar-expand navbar-light" id="mainNav">
+                            <div class="collapse navbar-collapse" id="navbarResponsive">
+                                <ul class="main_nav list-unstyled mb-0 navbar-nav">
+                                    <li class="nav-item mr-2">
+                                        <span>錢：</span>
+                                        <span>100,000.00</span>
+                                    </li>
+                                    <li class="nav-item mr-2">
+                                        <span>錢：</span>
+                                        <span>100,000.00</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Hamburger -->
+                        <!-- <div class="hamburger menu_mm ml-auto" style="line-height: 0;">
+                            <span class="menu_mm menu-svg"></span>
+                        </div> -->
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+                </div>
+            </div>
+        </header>
+        <!-- game -->
+        <div class="container-fluid">
+            <div class="owl-carousel" style="padding-top: 50px;">
+                <div class="item">
+                    <div class="d-flex flex-column">
+                        <img src="assets/images/game/1.png" alt="" class="kw-img-fluid">
+                        <img src="assets/images/game/2.png" alt="" class="kw-img-fluid">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="d-flex flex-column">
+                        <img src="assets/images/game/3.png" alt="" class="kw-img-fluid">
+                        <img src="assets/images/game/4.png" alt="" class="kw-img-fluid">
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
-    <div class="embed-container">
-        <iframe src="https://www.youtube.com/embed/AEUmLttrY5s" frameborder="0" allowfullscreen></iframe>
-        <!-- <iframe src='https://www.youtube.com/embed/AEUmLttrY5s' frameborder='0' allowfullscreen></iframe> -->
+
+        <!-- <div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+            <div class="menu_close_container">
+                <div class="menu_close">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <nav class="menu_nav">
+                <ul class="menu_mm list-unstyled">
+                    <li class="menu_mm mb-4">
+                        <a class="js-scroll-trigger font-600" href="#about">关于SAG</a>
+                    </li>
+                    <li class="menu_mm mb-4">
+                        <a class="js-scroll-trigger font-600" href="#coin">超能链介绍</a>
+                    </li>
+                    <li class="menu_mm mb-4">
+                        <a class="js-scroll-trigger font-600" href="#time">集团未来规划</a>
+                    </li>
+                    <li class="menu_mm mb-4">
+                        <a class="js-scroll-trigger font-600" href="#team">营运团队</a>
+                    </li>
+                    <li class="menu_mm mb-4">
+                        <a class="js-scroll-trigger font-600" href="#" target="_blank">登入</a>
+                    </li>
+                </ul>
+            </nav>
+        </div> -->
+
     </div>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- <script>
-        function setIframeHeight(iframe) {
-            if (iframe) {
-                var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
-                if (iframeWin.document.body) {
-                    iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+    <script src="assets/js/custom.js"></script>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop: true,
+            margin: 30,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                568: {
+                    items: 4
+                },
+                1000: {
+                    items: 4
                 }
             }
-        };
-
-        window.onload = function () {
-            setIframeHeight(document.getElementById('external-frame'));
-        };
-    </script> -->
+        })
+    </script>
 </body>
 
 </html>
