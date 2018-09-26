@@ -6,91 +6,7 @@ body {
 .text-orange{
 	color: #fbceac;
 }
-.kw-height{
-	height:60px;
-}
-.bg-header >.d-flex{
-	padding-bottom:8px;
-}
-.img-size{
-	width: 24px;
-}
-.img-size-chacter{
-	width:20px;
-}
-/* i6 */
-@media (min-width: 667px) {
-	.kw-height{
-		height:70px;
-	}
-	.img-size{
-		width: 24px;
-	}
-	.bg-header >.d-flex{
-		padding-bottom:0px;
-	}
-	
-}
-/* i7+ */
-@media (min-width: 736px) {
-	.kw-height{
-		height:76px;
-	}
-	.bg-header >.d-flex{
-		padding-top:4px;
-	}
-}
-/* ix */
-@media (min-width: 812px) {
-	.kw-height{
-		height:90px;
-	}
-	.bg-header >.d-flex{
-		padding-top:10px;
-	}
-	.img-size{
-		width: 28px;
-	}
-	.img-size-chacter{
-		width:24px;
-	}
-}
-/* ipad */
-@media (min-width: 1024px) {
-	.kw-height{
-		height:106px;
-	}
-	.bg-header >.d-flex{
-		padding-top:26px;
-	}
-	.title-font{
-		font-size:20px;
-	}
-	.img-size{
-		width: 32px;
-	}
-	.img-size-chacter{
-		width:28px;
-	}
-}
-/* ipad pro */
-@media (min-width: 1366px) {
-	.kw-height{
-		height:144px;
-	}
-	.bg-header >.d-flex{
-		padding-top:48px;
-	}
-	.title-font{
-		font-size:24px;
-	}
-	.img-size{
-		width: 36px;
-	}
-	.img-size-chacter{
-		width:32px;
-	}
-}
+
 /****************************
 iframe用
 ****************************/
@@ -338,8 +254,8 @@ iframe用
 	
 	display: inline-block;
 	background-size: cover;
-	width: 38px;
-	height: 38px;
+	width: 44px;
+	height: 44px;
 }
 
 .trans_400 {
@@ -364,5 +280,97 @@ image
 	.kw-img-fluid {
 		height: 30vh;
 		width: 30vh;
+	}
+}
+
+
+.kw-height{
+	height:60px;
+}
+.bg-header >.d-flex{
+	padding-bottom:8px;
+}
+.img-size{
+	width: 24px;
+}
+.img-size-chacter{
+	width:20px;
+}
+/* i6 */
+@media (min-width: 667px) {
+	.kw-height{
+		height:70px;
+	}
+	.img-size{
+		width: 24px;
+	}
+	.bg-header >.d-flex{
+		padding-bottom:0px;
+	}
+	
+}
+/* i7+ */
+@media (min-width: 736px) {
+	.kw-height{
+		height:76px;
+	}
+	.bg-header >.d-flex{
+		padding-top:4px;
+	}
+}
+/* ix */
+@media (min-width: 812px) {
+	.kw-height{
+		height:90px;
+	}
+	.bg-header >.d-flex{
+		padding-top:10px;
+	}
+	.img-size{
+		width: 28px;
+	}
+	.img-size-chacter{
+		width:24px;
+	}
+}
+/* ipad */
+@media (min-width: 1024px) {
+	.kw-height{
+		height:106px;
+	}
+	.bg-header >.d-flex{
+		padding-top:26px;
+	}
+	.title-font{
+		font-size:20px;
+	}
+	.img-size{
+		width: 32px;
+	}
+	.img-size-chacter{
+		width:28px;
+	}
+	.menu-svg {
+		width: 60px;
+		height: 60px;
+		margin-top: 28px;
+	}
+}
+/* ipad pro */
+@media (min-width: 1366px) {
+	.kw-height{
+		height:144px;
+	}
+	.bg-header >.d-flex{
+		padding-top:48px;
+	}
+	.title-font{
+		font-size:24px;
+	}
+	.img-size{
+		width: 36px;
+	}
+	.img-size-chacter{
+		width:32px;
 	}
 }
