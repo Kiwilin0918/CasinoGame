@@ -6,6 +6,9 @@ body {
 .text-orange{
 	color: #fbceac;
 }
+.text-gold{
+	color: #fca84d;
+}
 
 /****************************
 iframe用
@@ -296,6 +299,9 @@ image
 .img-size-chacter{
 	width:20px;
 }
+.kw-ml-admin{
+	margin-left: 8px;
+}
 /* i6 */
 @media (min-width: 667px) {
 	.kw-height{
@@ -307,6 +313,9 @@ image
 	.bg-header >.d-flex{
 		padding-bottom:0px;
 	}
+	.kw-ml-admin{
+		margin-left: 14px;
+	}
 	
 }
 /* i7+ */
@@ -316,6 +325,9 @@ image
 	}
 	.bg-header >.d-flex{
 		padding-top:4px;
+	}
+	.kw-ml-admin{
+		margin-left: 10px;
 	}
 }
 /* ix */
@@ -331,6 +343,9 @@ image
 	}
 	.img-size-chacter{
 		width:24px;
+	}
+	.kw-ml-admin{
+		margin-left: 16px;
 	}
 }
 /* ipad */
@@ -355,6 +370,9 @@ image
 		height: 60px;
 		margin-top: 28px;
 	}
+	.kw-ml-admin{
+		margin-left: 24px;
+	}
 }
 /* ipad pro */
 @media (min-width: 1366px) {
@@ -372,5 +390,8 @@ image
 	}
 	.img-size-chacter{
 		width:32px;
+	}
+	.kw-ml-admin{
+		margin-left: 30px;
 	}
 }
