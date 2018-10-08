@@ -71,6 +71,7 @@ iframe用
 	width: 100%;
 }
 .bg-header{
+	position: relative;
 	background-image: url('../images/header.png');
 	background-size: 100%;
 	background-position: 50% 0;
@@ -90,7 +91,19 @@ iframe用
 .header.scrolled .header_content {
 	height: 80px;
 }
-
+.bg-logo{
+	position: absolute;
+	transform: translate(50%,0%);
+	top: 0;
+	right: 50%;
+	background-position: 50% 50%;
+	background-size: 100%;
+	width: 200px;
+	height: 50px;
+	z-index: 6000;
+	background-repeat: no-repeat;
+	background-image: url('../images/ani.gif');
+}
 /*********************************
 3. Main Nav
 *********************************/
@@ -316,7 +329,12 @@ image
 	.kw-ml-admin{
 		margin-left: 14px;
 	}
-	
+	.bg-logo{
+		top: 5px;
+		right: 50%;
+		width: 234px;
+		height: 50px;
+	}
 }
 /* i7+ */
 @media (min-width: 736px) {
@@ -328,6 +346,12 @@ image
 	}
 	.kw-ml-admin{
 		margin-left: 10px;
+	}
+	.bg-logo{
+		top: 4px;
+		right: 50%;
+		width: 256px;
+		height: 60px;
 	}
 }
 /* ix */
@@ -346,6 +370,12 @@ image
 	}
 	.kw-ml-admin{
 		margin-left: 16px;
+	}
+	.bg-logo{
+		top: 6px;
+		right: 50%;
+		width: 280px;
+		height: 60px;
 	}
 }
 /* ipad */
@@ -373,6 +403,12 @@ image
 	.kw-ml-admin{
 		margin-left: 24px;
 	}
+	.bg-logo{
+		top: 6px;
+		right: 50%;
+		width: 350px;
+		height: 80px;
+	}
 }
 /* ipad pro */
 @media (min-width: 1366px) {
@@ -393,5 +429,11 @@ image
 	}
 	.kw-ml-admin{
 		margin-left: 30px;
+	}
+	.bg-logo{
+		top: 6px;
+		right: 50%;
+		width: 470px;
+		height: 110px;
 	}
 }
